@@ -1,4 +1,4 @@
-import { DoctorsScreen } from "@/screens/Doctors.screen";
+import { DoctorsScreen } from "@/screens";
 
 export default function Screen() {
   return <DoctorsScreen />;

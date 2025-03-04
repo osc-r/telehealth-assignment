@@ -1,4 +1,4 @@
-import { LoginScreen } from "@/screens/Login.screen";
+import { LoginScreen } from "@/screens";
 
 export default function Screen() {
   return <LoginScreen />;
