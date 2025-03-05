@@ -3,6 +3,7 @@ import { router } from "expo-router";
 
 export default function Screen() {
   const onPressWelcome = () => {
+    router.canDismiss() && router.dismissAll();
     router.push("/doctors");
   };
 
