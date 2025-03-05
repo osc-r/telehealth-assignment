@@ -1,5 +1,10 @@
 import { WelcomeScreen } from "@/screens";
+import { router } from "expo-router";
 
 export default function Screen() {
-  return <WelcomeScreen />;
+  const onPressWelcome = () => {
+    router.push("/doctors");
+  };
+
+  return <WelcomeScreen onPressWelcome={onPressWelcome} />;
 }

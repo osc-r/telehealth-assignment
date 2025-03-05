@@ -1,17 +1,21 @@
-import { View } from "react-native";
+import { Pressable, View } from "react-native";
 import { styles } from "./welcome.styles";
-import { Card, Text } from "react-native-paper";
+import { Surface, Text } from "react-native-paper";
 
-type WelcomeScreenProps = {};
+type WelcomeScreenProps = {
+  onPressWelcome: () => void;
+};
 
 export const WelcomeScreen = (props: WelcomeScreenProps) => {
   return (
     <View style={styles.container}>
-      <Card style={styles.card}>
-        <Text variant="headlineLarge" style={styles.text}>
-          ยินดีตอนรับ
-        </Text>
-      </Card>
+      <Surface style={styles.card}>
+        <Pressable onPress={props.onPressWelcome}>
+          <Text variant="headlineLarge" style={styles.text}>
+            ยินดีตอนรับ
+          </Text>
+        </Pressable>
+      </Surface>
     </View>
   );
 };

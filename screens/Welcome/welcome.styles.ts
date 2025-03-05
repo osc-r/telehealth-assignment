@@ -7,7 +7,12 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  card: { padding: 16, backgroundColor: "white", shadowOpacity: 0.25 },
+  card: {
+    padding: 16,
+    backgroundColor: "white",
+    shadowOpacity: 0.25,
+    borderRadius: 16,
+  },
   text: {
     color: "#3C6CE7",
   },
